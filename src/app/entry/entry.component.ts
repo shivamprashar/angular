@@ -16,7 +16,7 @@ export class EntryComponent implements OnInit {
   constructor(private router:Router){ }
   onSelect(i:any)
   {
-    this.router.navigate(['/home','home.id']);
+    this.router.navigate(["/home","home.id"]);
   }
 ngOnInit(): void {  }
 
