@@ -12,6 +12,9 @@ import { SumService } from './sum.service';
 import { FormsModule } from '@angular/forms';
 import { LoginService } from './login.service';
 import { LanguageDetailComponent } from './language-detail/language-detail.component';
+import { ObservablesTTComponent } from './observables-tt/observables-tt.component';
+import { HTTPCLientModuleComponent } from './http-client-module/http-client-module.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,15 @@ import { LanguageDetailComponent } from './language-detail/language-detail.compo
     EntryComponent,
     LoginComponent,
     CustomersComponent,
-    LanguageDetailComponent
+    LanguageDetailComponent,
+    ObservablesTTComponent,
+    HTTPCLientModuleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [SumService,LoginService],
   bootstrap: [AppComponent]

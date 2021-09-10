@@ -4,3 +4,7 @@
       <span>{{i.id}}</span>{{i.name}}
    </li>
 </ul>
+<h3>
+   <input type="text" #newData placeholder="Enter data to send ">
+   <button type="submit" (click)="sendData(newData)">Send Data To Parent</button>
+</h3>

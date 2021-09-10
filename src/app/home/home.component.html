@@ -1,1 +1,10 @@
-<app-entry></app-entry>
+<!-- <ul>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<app-entry [parentData]="name" (childEvent)="addItem($event)"></app-entry> -->
+
+<div *ngFor = "let user of Users">
+    <label>{{user.id}}</label>
+    <label>{{user.userId}}</label>
+    <label>{{user.title}}</label>
+</div>
